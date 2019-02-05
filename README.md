@@ -1,8 +1,6 @@
 # MallettSphinx
-Code from my master project (2013).
+Code from paper Taylor, Leibbrandt, Powers, "Anywhere but Here - Enron’s Emails in the Midst of a Crisis" ICAART 2015 Proceedings of the International Conference on Agents and Artificial Intelligence, 2, pp 247-253
 
-Both Sphinx and MALLET weren't on Github at the time so this is code is well out of date.
+Don't think MALLET was on Github at the time so this is code is well out of date.
 
-The purpose of this code is to use words and topics both from a corpus and from a speech sample to progressively adapt the language model of the speech recogniser, Sphinx. 
-
-In this case, a topic model is first trained on a corpus from the documents a user reads, writes, etc. Then, speech is read in by the recogniser. The transcript is added to the corpus and the topic model re-trained. The most probable topics are elucidated and most probable words extracted from these topics. The probabilities of these words are then boosted in the language model.
+test.java does all the work calling the CRF and the Topic model and stuffing it with phrases from the Enron email corpus. The actual class is buried deep in but I've added it
